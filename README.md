@@ -9,7 +9,8 @@ Backing up your linux /home folder as a password protected zip file using google
 ##Setting up Telegram
 Registring a [Telegram BOT](https://core.telegram.org/bots/api) via @botfather optaining the API Key.
 Send a message to your bot then retrieve the update with:
-https://api.telegram.org/bot<BOTID>/sendMessage?chat_id="yourchatid"&text="Hello World!"
+[https://api.telegram.org/bot<BOTID>/sendMessage?chat_id="yourchatid"&text="Hello World!"](https://api.telegram.org/bot<BOTID>/sendMessage?chat_id="yourchatid"&text="Hello World!")
+
 `chat_id` is equal to `USERID`.
 `KEY` is equal to the bot api key.
 
