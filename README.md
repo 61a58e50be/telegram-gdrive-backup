@@ -20,11 +20,12 @@ You can install gdrive using the github repository linked above or if you're usi
 You can use a cronjob or systemd/Timers to schedule Backups.
 
 **Cronjob example (run backup every day at 00:00):**
-0    0    * * *   /path/to/telegram-gdrive-backup/backup.sh
+`0    0    * * *   /path/to/telegram-gdrive-backup/backup.sh`
 
 **Systemd example (after 12h uptime and 15 min after reboot):**
 create /etc/systemd/system/backup.service with following content:
-`[Unit]
+`
+[Unit]
 Description=Run telegram-gdrive-backup script after boot and daily on uptime
 
 [Timer]
@@ -35,4 +36,5 @@ OnUnitActiveSec=12h
 ExecStart=/path/to/telegram-gdrive-backup/backup.sh
 
 [Install]
-WantedBy=timers.target`
+WantedBy=timers.target
+`
