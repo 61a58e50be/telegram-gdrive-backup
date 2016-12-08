@@ -7,7 +7,7 @@
 #Config Backup
 TIMESTAMP=`date +%d-%b-%Y-%H-%M`
 BACKUPNAME=$HOSTNAME-$TIMESTAMP.zip #Backup Fileformat
-CREDS=`date +%s | sha256sum | base64 | head -c 64 ; echo` 
+CREDS=`openssl rand -base64 64` 
 LOCATION=/home/$USER/ #Location which should be backuped
 
 #Config Telegram
